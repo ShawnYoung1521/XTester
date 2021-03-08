@@ -1,0 +1,4 @@
+include ':intent'
+include ':dialog'
+include ':app'
+rootProject.name = "Texter"
