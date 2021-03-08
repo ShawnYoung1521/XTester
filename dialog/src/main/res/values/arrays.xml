@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="child_3">
+        <item>720P 25fps</item>
+        <item>720P 30fps</item>
+        <item>1080P 25fps</item>
+        <item>1080P 30fps</item>
+    </string-array>
+    <string-array name="child_2">
+        <item>720P 25fps</item>
+        <item>720P 30fps</item>
+        <item>1080P 25fps</item>
+        <item>1080P 30fps</item>
+        <item>AHD 720P 25fps</item>
+        <item>AHD 720P 30fps</item>
+        <item>AHD 1080P 25fps</item>
+        <item>AHD 1080P 30fps</item>
+    </string-array>
+
+    <string-array name="child_1">
+        <item>720P 25fps</item>
+        <item>720P 30fps</item>
+        <item>1080P 25fps</item>
+        <item>AHD 1080P 25fps</item>
+        <item>AHD 1080P 30fps</item>
+    </string-array>
+
+    <string-array name="parent_item">
+        <item>360</item>
+        <item>AHD</item>
+        <item>CVBS</item>
+    </string-array>
+</resources>
