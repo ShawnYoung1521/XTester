@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -132,27 +134,29 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showConfirmDialog(){
-        final AlertDialog.Builder normalDialog = new AlertDialog.Builder(this);
         final String value = ParentList.get(mParentmValue2)+"/"+ChildLists.get(mParentmValue2).get(mChildValue2);
-        normalDialog.setTitle(value);
-        normalDialog.setMessage("(需要通过10频接口输入)");
-        normalDialog.setPositiveButton("OK",
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        mParentmValue =  mParentmValue2;
-                        mChildValue =  mChildValue2;
-                        Toast.makeText(getApplicationContext(),value,Toast.LENGTH_SHORT).show();
-                    }
-                });
-        normalDialog.setNegativeButton("cancel",
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                });
-        normalDialog.show();
+        final AlertDialog.Builder customizeDialog = new AlertDialog.Builder(MainActivity.this);
+        final View dialogView = LayoutInflater.from(MainActivity.this).inflate(R.layout.dialog_camera,null);
+        ((TextView)dialogView.findViewById(R.id.title)).setText(value);
+        ((TextView)dialogView.findViewById(R.id.message)).setText(mParentmValue2 != 2?getString(R.string.camera12_prompt):getString(R.string.camera10_prompt));
+        ((ImageView)dialogView.findViewById(R.id.icon)).setImageDrawable(mParentmValue2 != 2?getDrawable(R.drawable.pin_icon12):getDrawable(R.drawable.pin_icon10));
+        customizeDialog.setView(dialogView);
+        final AlertDialog alertDialog = customizeDialog.create();
+        dialogView.findViewById(R.id.canal).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alertDialog.dismiss();
+            }
+        });
+        dialogView.findViewById(R.id.ok).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mParentmValue =  mParentmValue2;
+                mChildValue =  mChildValue2;
+                Toast.makeText(getApplicationContext(),value,Toast.LENGTH_SHORT).show();
+            }
+        });
+        alertDialog.show();
     }
     /**普通对话框**/
     private void showNormalDialog(){
@@ -276,8 +280,6 @@ public class MainActivity extends AppCompatActivity {
                         for (int i = 0; i < size; i++) {
                             str += mChoices.get(i) ;
                         }
-
-
                         XToast.getInstance().Text("选择了 "+str).show();
                     }
                 });
