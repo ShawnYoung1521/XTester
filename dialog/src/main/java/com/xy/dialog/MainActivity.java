@@ -135,6 +135,7 @@ public class MainActivity extends AppCompatActivity {
         final AlertDialog.Builder normalDialog = new AlertDialog.Builder(this);
         final String value = ParentList.get(mParentmValue2)+"/"+ChildLists.get(mParentmValue2).get(mChildValue2);
         normalDialog.setTitle(value);
+        normalDialog.setMessage("(需要通过10频接口输入)");
         normalDialog.setPositiveButton("OK",
                 new DialogInterface.OnClickListener() {
                     @Override

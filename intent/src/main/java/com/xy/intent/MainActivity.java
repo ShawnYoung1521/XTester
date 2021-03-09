@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     //播放指定路径音乐
     public void playMusicClick(View view){
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        Uri uri = Uri.parse("file:///storage/sdcard0/平凡之路.mp3");  //路径也可以写成："/storage/sdcard0/平凡之路.mp3"
+        Uri uri = Uri.parse("file:///storage/emulated/0/Music/周杰伦 - 安静.flac");  //路径也可以写成："/storage/sdcard0/平凡之路.mp3"
         intent.setDataAndType(uri, "audio/mp3"); //方法：Intent android.content.Intent.setDataAndType(Uri data, String type)
         startActivity(intent);
     }
