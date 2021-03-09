@@ -1,3 +1,4 @@
+include ':fragment+tab+viewpager'
 include ':intent', ':windowmanager'
 include ':dialog'
 include ':app'
