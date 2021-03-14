@@ -15,7 +15,9 @@
             <option value="$PROJECT_DIR$/dialog" />
             <option value="$PROJECT_DIR$/fragment+tab+viewpager" />
             <option value="$PROJECT_DIR$/intent" />
+            <option value="$PROJECT_DIR$/permission" />
             <option value="$PROJECT_DIR$/windowmanager" />
+            <option value="$PROJECT_DIR$/zip" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

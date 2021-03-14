@@ -1,3 +1,5 @@
+include ':zip'
+include ':permission'
 include ':fragment+tab+viewpager'
 include ':intent', ':windowmanager'
 include ':dialog'

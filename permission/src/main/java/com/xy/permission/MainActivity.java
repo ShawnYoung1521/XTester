@@ -24,11 +24,10 @@ public class MainActivity extends AppCompatActivity {
                 for (String s:XPermission.getPermissions()){
                     XLog.i(s);
                 }
-
                 break;
             case R.id.getpermission_:
                 /**单个权限*/
-                XPermission.permissionGroup(PermissionsContract.AidioPermissions).callback(new XPermission.SimpleCallback() {
+                XPermission.permission(PermissionsContract.AidioPermissions).callback(new XPermission.SimpleCallback() {
                     @Override
                     public void onGranted() {
                         XLog.i();
