@@ -1,15 +1,15 @@
 package cn.xy.windowmanager;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.view.Display;
+import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Random;
 
 import cn.xy.library.XApp;
 import cn.xy.library.util.screen.XScreen;
@@ -30,6 +30,25 @@ public class MainActivity extends AppCompatActivity {
         setKeepScreenOn(this,true);
         final DisplayMetrics mDisplayMetrics = new DisplayMetrics();
         EasyTouchView.getInstance().initEasyTouch(this,mDisplayMetrics);
+    }
+
+    private void TestToast() {
+        Random rand = new Random();
+
+        // nextInt is normally exclusive of the top value,
+        // so add 1 to make it inclusive
+        int w = rand.nextInt(XScreen.getScreenWidth()) ;
+        int h = rand.nextInt(XScreen.getScreenHeight()) ;
+        XToast.getInstance().Text("随机位置的Toast")
+                .TextColor(R.color.colorPrimary) //字体颜色
+                .TextSize(20) //字体大小
+                .BackGroundColor(R.color.colorAccent) //背景颜色
+                .LayoutParamsX(w) //偏离XToast左边距离 受Gravity影响
+                .LayoutParamsY(h) //偏离XToastY坐标距离 受Gravity影响
+                .Gravity(Gravity.BOTTOM|Gravity.LEFT) //Toast显示位置的重心设置
+                .RoundedCorners(3) //背景圆角大小
+                .ShowTime(XToast.LENGTH_SHORTSHORT) //显示时长
+                .show();
     }
 
     private void intData() {
@@ -59,6 +78,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.close:
                 EasyTouchView.getInstance().removeIcon();
                 break;
+            case R.id.toast:
+                TestToast();
+                break;
         }
     }
+
+
 }
