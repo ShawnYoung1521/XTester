@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:onClick="isAppInstalled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="isAppInstalled?" />
+    <Button
+        android:onClick="isAppDebug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="isAppDebug?" />
+    <Button
+        android:onClick="isAppSystem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="isAppSystem?" />
+    <Button
+        android:onClick="isAppRunning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="isAppRunning?" />
+    <Button
+        android:onClick="getAppIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getAppIcon" />
+    <Button
+        android:onClick="getAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getAppName?" />
+    <Button
+        android:onClick="getAppPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getAppPath?" />
+    <Button
+        android:onClick="getAppVersionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getAppVersionName?" />
+    <Button
+        android:onClick="getAppVersionCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getAppVersionCode?" />
+    <Button
+        android:onClick="getAppSignature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getAppSignature?" />
+    <Button
+        android:onClick="getAppUid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getAppUid?" />
+    <Button
+        android:onClick="getAppInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getAppInfo?" />
+    <Button
+        android:onClick="changeAppState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="changeAppState?" />
+    <Button
+        android:onClick="changActivityState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="changActivityState?" />
+
+</LinearLayout>
