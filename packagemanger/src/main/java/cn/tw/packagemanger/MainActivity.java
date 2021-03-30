@@ -1,7 +1,7 @@
 package cn.tw.packagemanger;
 
 import android.content.ComponentName;
-import android.content.pm.PackageManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         XApp.init(getApplication());
+    }
+
+    public void all_app(View view){
+        startActivity(new Intent(this,AppListActivity.class));
     }
 
     public void isAppInstalled(View view){
@@ -63,10 +67,11 @@ public class MainActivity extends AppCompatActivity {
     boolean b = false;
     public void changeAppState(View view){
         b = !b;
-        XApplication.getActivityState(packageName, b);
+        XApplication.changeAppState(packageName, b);
     }
     public void changActivityState(View view){
         b = !b;
         XApplication.changActivityState(new ComponentName("cn.xy.windowmanager","cn.xy.windowmanager.MainActivity"),b);
     }
+
 }
