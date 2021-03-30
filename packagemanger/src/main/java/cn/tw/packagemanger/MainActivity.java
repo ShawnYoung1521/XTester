@@ -58,10 +58,10 @@ public class MainActivity extends AppCompatActivity {
         XToast.getInstance().Text(""+ XApplication.getAppSignature(packageName)).show();
     }
     public void getAppUid(View view){
-        XToast.getInstance().Text(""+ XApplication.getAppUid(packageName)).show();
+        XToast.getInstance().Text(""+ XApplication.getActivityState(new ComponentName("com.softwinner.dvr", "com.softwinner.dvr.ui.activity.RecordActivity"))).show();
     }
     public void getAppInfo(View view){
-        XToast.getInstance().Text(""+ XApplication.getAppInfo(packageName)).show();
+        XToast.getInstance().Text(""+ XApplication.getActivityState(new ComponentName("com.softwinner.dvr", "com.softwinner.dvr.ui.activity.RecordAliasActivity"))).show();
     }
 
     boolean b = false;
@@ -73,5 +73,4 @@ public class MainActivity extends AppCompatActivity {
         b = !b;
         XApplication.changActivityState(new ComponentName("cn.xy.windowmanager","cn.xy.windowmanager.MainActivity"),b);
     }
-
 }

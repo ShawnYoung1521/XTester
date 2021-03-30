@@ -1,4 +1,4 @@
-include ':zip', ':screen', ':pdf', ':zxing', ':packagemanger'
+include ':zip', ':screen', ':pdf', ':zxing', ':packagemanger', ':fragment+tab+viewpager2'
 include ':permission'
 include ':fragment+tab+viewpager'
 include ':intent', ':windowmanager'
