@@ -1,7 +1,8 @@
-include ':zip', ':screen', ':pdf', ':zxing', ':packagemanger', ':fragment+tab+viewpager2', ':network'
+include ':zip', ':screen', ':pdf', ':zxing', ':packagemanger', ':fragment+tab+viewpager2', ':network', ':test_music', ':fragment+tab+viewpager+radiogroup'
 include ':permission'
 include ':fragment+tab+viewpager'
 include ':intent', ':windowmanager'
 include ':dialog'
 include ':app'
+include ':thread'
 rootProject.name = "Texter"
