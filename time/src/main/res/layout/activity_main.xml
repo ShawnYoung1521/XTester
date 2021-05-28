@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:onClick="getNowMills"
+            android:text="获取当前毫秒时间戳"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+        <Button
+            android:onClick="getNowString"
+            android:text="获取当前时间字符串"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+        <Button
+            android:onClick="getNowDate"
+            android:text="获取当前 Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+        <Button
+            android:onClick="getTimeSpanByNow"
+            android:text="获取打开应用的时间"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:onClick="isToday"
+            android:text="是否今天获取了时间戳"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+        <Button
+            android:onClick="isLeapYear"
+            android:text="今年是否闰年"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+        <Button
+            android:onClick="getChineseWeek"
+            android:text="获取中式星期"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+        <Button
+            android:onClick="getUSWeek"
+            android:text="获取美式式星期"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+        <Button
+            android:onClick="isAm"
+            android:text="判断现在是否上午"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+        <Button
+            android:onClick="getChineseZodiac"
+            android:text="获取今年生肖"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+        <Button
+            android:onClick="getZodiac"
+            android:text="获取本月星座"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+</ScrollView>
