@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ਸੰਗੀਤ</string>
+    <string name="error">"ਬਹੁਤ ਸਾਰੀਆਂ ਗਲਤੀਆਂ ਫਾਈਲਾਂ, ਕਿਰਪਾ ਕਰਕੇ ਜਾਂਚ ਲਓ ਕਿ ਕੀ ਫਾਈਲ ਦਾ ਫਾਰਮੈਟ ਸਹਿਯੋਗੀ ਹੈ"</string>
+</resources>

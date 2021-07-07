@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ເພງ</string>
+    <string name="error">"ມີຂໍ້ຜິດພາດຫຼາຍເກີນໄປ, ກະລຸນາກວດເບິ່ງວ່າຮູບແບບຂອງເອກະສານສະ ໜັບ ສະ ໜູນ ຫຼືບໍ່"</string>
+</resources>

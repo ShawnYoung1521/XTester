@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28"
+
+    defaultConfig {
+        applicationId "com.tw.music"
+        minSdkVersion 19
+        targetSdkVersion 26
+
+        //写在这里~
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    dependencies {
+    }
+}
+
+dependencies {
+    implementation files('libs\\framework_6.0.jar')
+    implementation files('libs\\classes.jar')
+}

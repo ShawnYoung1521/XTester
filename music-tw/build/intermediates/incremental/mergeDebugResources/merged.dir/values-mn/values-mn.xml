@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"хөгжим"</string>
+    <string name="error">"Алдаа хэт олон файл байна. Файлын формат дэмжигдсэн эсэхийг шалгана уу"</string>
+</resources>

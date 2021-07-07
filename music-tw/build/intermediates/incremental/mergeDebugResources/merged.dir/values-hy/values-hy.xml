@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">երաժշտություն</string>
+    <string name="error">"Սխալների շատ ֆայլեր, խնդրում ենք ստուգել, թե արդյոք ֆայլի ձևաչափն ապահովված է"</string>
+</resources>

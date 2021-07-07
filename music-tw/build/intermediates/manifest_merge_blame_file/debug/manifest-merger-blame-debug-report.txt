@@ -1,0 +1,58 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tw.music"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="26" />
+9-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:7:5-80
+11-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:7:22-77
+12    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+12-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:8:5-75
+12-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:8:22-72
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:9:5-71
+13-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:9:22-68
+14
+15    <application
+15-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:11:5-27:19
+16        android:name="android.support.multidex.MultiDexApplication"
+17        android:debuggable="true"
+18        android:icon="@drawable/ic_launcher"
+18-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:12:9-45
+19        android:label="@string/app_name"
+19-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:13:9-41
+20        android:testOnly="true" >
+21        <activity
+21-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:14:9-23:20
+22            android:name="com.tw.music.MusicActivity"
+22-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:15:13-42
+23            android:launchMode="singleTask"
+23-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:16:13-44
+24            android:theme="@android:style/Theme.NoTitleBar" >
+24-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:17:13-60
+25            <intent-filter>
+25-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:18:13-22:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:19:17-69
+26-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:19:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:21:17-77
+28-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:21:27-74
+29            </intent-filter>
+30        </activity>
+31
+32        <service android:name="com.tw.music.MusicService" >
+32-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:24:9-26:19
+32-->C:\Users\TW-txet\Desktop\Music-Old\app\src\main\AndroidManifest.xml:25:13-41
+33        </service>
+34    </application>
+35
+36</manifest>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\TW-txet\\Desktop\\Music-Old\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ta\\values-ta.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\TW-txet\\.gradle\\caches\\transforms-2\\files-2.1\\bc6eeb63f56fe92bba35ff8a8cd413ec\\MusicRes-1.0.1\\res\\values-ta\\values-ta.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,96",
+                        "endColumns": "40,102",
+                        "endOffsets": "91,194"
+                    }
+                }
+            ]
+        }
+    ]
+}

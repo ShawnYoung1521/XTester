@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">mūzika</string>
+    <string name="error">"Pārāk daudz kļūdu failu. Lūdzu, pārbaudiet, vai faila formāts to atbalsta"</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Muzik</string>
+    <string name="error">"Terlalu banyak fail ralat, sila semak jika format fail menyokong"</string>
+</resources>

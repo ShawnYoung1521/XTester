@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="album">"Альбом: "</string>
+    <string name="app_name">"Музыка"</string>
+    <string name="artist">"Артист: "</string>
+    <string name="playlist">"Плейлисты"</string>
+    <string name="song">"Песня: "</string>
+    <string name="unknown">"неизвестный"</string>
+</resources>

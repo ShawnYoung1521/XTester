@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Música</string>
+    <string name="error">"Massa fitxers d’error, comproveu si el format del fitxer és compatible"</string>
+</resources>

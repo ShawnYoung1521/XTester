@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"musika"</string>
+    <string name="error">"Napakaraming mga error na error, mangyaring suriin kung sinusuportahan ng format ng file"</string>
+    <string name="song">"awit: "</string>
+    <string name="unknown">"Hindi kilala"</string>
+</resources>

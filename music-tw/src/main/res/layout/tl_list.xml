@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="234dip"
+    android:layout_height="56dip"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/tl_l_bg"
+    android:ignoreGravity="@+id/icon"
+    android:paddingLeft="16dip" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="56dip"
+        android:layout_height="56dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/play_indicator"
+        android:layout_toRightOf="@+id/icon"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dip"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="18dip" />
+
+    <ImageView
+        android:id="@+id/play_indicator"
+        android:layout_width="18dip"
+        android:layout_height="18dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dip"
+        android:src="@drawable/play_indicator" />
+
+</RelativeLayout>

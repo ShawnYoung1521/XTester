@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">இசை</string>
+    <string name="error">"பல பிழை கோப்புகள், கோப்பு வடிவம் ஆதரிக்கிறதா என்பதை சரிபார்க்கவும்"</string>
+</resources>

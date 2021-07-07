@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_not_found">應用程式未安裝。</string>
+    <string name="album">專輯: </string>
+    <string name="app_name">音樂</string>
+    <string name="artist">藝術家: </string>
+    <string name="error">錯誤文件過多，請檢查文件格式是否支持</string>
+    <string name="lyrics_state_title">歌詞</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_message">禁用該權限後，APP可能無法正常運行，請手動開啟權限</string>
+    <string name="permission_setting">設置</string>
+    <string name="permission_title">提示</string>
+    <string name="playback_failed">播放器不支持這種類型的音頻文件。</string>
+    <string name="playlist">播放列表</string>
+    <string name="song">歌曲: </string>
+    <string name="streamloadingtext">連接到 %s\u2026</string>
+    <string name="unknown">未知</string>
+</resources>
