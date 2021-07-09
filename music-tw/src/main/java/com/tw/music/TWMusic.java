@@ -1,20 +1,20 @@
 package com.tw.music;
 
+import android.graphics.Bitmap;
+import android.tw.john.TWUtil;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.FileReader;
 import java.util.Locale;
 
-import android.graphics.Bitmap;
-import android.tw.john.TWUtil;
-
 public class TWMusic extends TWUtil {
 	private static TWMusic mTW = new TWMusic();
 	private static int mCount = 0;
 	public static TWMusic open() {
 		if(mCount++ == 0) {
-	        if(mTW.open(new short[] {0x0201, 0x0202, 0x0301, 0x0302, (short)0x9e03, (short)0x9e1f}) != 0) {
+	        if(mTW.open(new short[] { (short)0x9e1f}) != 0) {
 	        	mCount--;
 	        	return null;
 	        }
@@ -39,10 +39,8 @@ public class TWMusic extends TWUtil {
 	public static final int REQUEST_SOURCE = 0x9e11;
 	public static final int REQUEST_MEDIA = 0x0502;
 	public static final int REQUEST_SERVICE = 0x9e00;
-	public static final int RETURN_MUSIC = 0x9e03;
 	public static final int RETURN_MOUNT = 0x9e1f;
-	public static final int BT_CALL_STATE = 0x0302;
-	
+
 	public void requestSource(int source) {
 		write(REQUEST_SOURCE, (1<<7) | (1<<6), source);
 	}

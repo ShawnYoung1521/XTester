@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">"muzyka"</string>
-    <string name="error">"Zbyt wiele plików błędów, sprawdź, czy format pliku obsługuje"</string>
-</resources>
